@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Table</title>
+    <link rel="stylesheet" href="styleTable.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Side Menu -->
+        <div class="sidebar">
+            <div class="logo">Weather App</div>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="tables.html">Tables</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header with Search Bar and User Profile -->
+            <div class="header">
+                <div class="search-bar">
+                    <input type="text" id="cityInput" placeholder="Enter city name">
+                    <button id="getWeatherBtn">Get Weather</button>
+                </div>
+                <div class="user-profile">User Profile</div>
+            </div>
+
+            <!-- Content Section -->
+            <div class="content-section">
+                <!-- Table Section -->
+                <div class="table-section">
+                    <h2 id="cityName">Weather Forecast for City</h2>
+                    <table id="weatherTable">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Temperature (°C)</th>
+                                <th>Condition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Weather data will be inserted here -->
+                        </tbody>
+                    </table>
+                    <div class="pagination">
+                        <button id="prevButton">Previous</button>
+                        <button id="nextButton">Next</button>
+                    </div>
+                    <div class="filter-buttons">
+                        <button id="showAscendingBtn">Show Ascending</button>
+                        <button id="showDescendingBtn">Show Descending</button>
+                        <button id="showRainyBtn">Show Rainy Days</button>
+                        <button id="showHighestBtn">Show Highest Temp</button>
+                    </div>
+                </div>
+
+                <!-- Chatbot Section -->
+                <div class="chatbot-section">
+                    <div class="chat-header">Chatbot</div>
+                    <div id="chatbox" class="chatbox"></div>
+                    <form id="chatForm">
+                        <input type="text" id="userInput" placeholder="Type your message...">
+                        <button type="submit" id="sendMessage">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scriptTable.js"></script>
+</body>
+</html>

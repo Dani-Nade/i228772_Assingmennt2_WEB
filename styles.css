@@ -1,0 +1,177 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #34495e;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #2980b9;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+}
+
+.user-profile {
+    padding: 10px;
+    background-color: #2980b9;
+    color: white;
+    border-radius: 4px;
+}
+
+.weather-data, .table-section, .charts {
+    margin-bottom: 20px;
+}
+.weather-data {
+    text-align: center;
+    background-color: #3498db;
+    color: white; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin: 0 auto; 
+}
+
+.weather-data h2 {
+    font-size: 32px; 
+    margin-bottom: 20px;
+}
+
+.weather-data p {
+    font-size: 18px;
+    margin: 10px 0; 
+    font-weight: 500;
+}
+
+.weather-data span {
+    font-weight: 700;
+}
+
+.weather-data p:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+}
+
+.weather-data span#tempValue {
+    font-size: 24px;
+}
+
+.unit-selector {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.unit-selector label {
+    margin-right: 10px;
+    font-weight: 500;
+    color: #34495e;
+}
+
+.unit-selector select {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px; 
+    background-color: white;
+}
+.charts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.chart-container {
+    flex: 1;
+    margin: 0 10px;
+    min-width: 250px;
+}
+
+.chart-container canvas {
+    width: 100%;
+    height: 300px;
+}
+
+.table-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-section th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.table-section th {
+    background-color: #2980b9;
+    color: white;
+}
+
+.table-section td {
+    background-color: #ecf0f1;
+}

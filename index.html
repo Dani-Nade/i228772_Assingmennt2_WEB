@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Side Menu -->
+        <div class="sidebar">
+            <div class="logo">Weather App</div>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="tables.html">Tables</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header with Search Bar and User Profile -->
+            <div class="header">
+                <div class="search-bar">
+                    <input type="text" id="cityInput" placeholder="Enter city name">
+                    <button id="getWeatherBtn">Get Weather</button>
+                </div>
+                <div class="user-profile">User Profile</div>
+            </div>
+
+            <!-- Weather Data Section -->
+            <div class="weather-data" id="weatherWidget">
+                <h2 id="cityName">City Name</h2>
+                <p id="weatherDescription">Weather Description</p>
+                <p id="temperature">Temperature: <span id="tempValue"></span>°C</p>
+                <p id="humidity">Humidity: <span id="humidityValue"></span>%</p>
+                <p id="windSpeed">Wind Speed: <span id="windSpeedValue"></span> m/s</p>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="charts">
+                <div class="chart-container" id="verticalBarChartContainer">
+                    <canvas id="tempBarChart"></canvas>
+                </div>
+                <div class="chart-container" id="doughnutChartContainer">
+                    <canvas id="weatherDoughnutChart"></canvas>
+                </div>
+                <div class="chart-container" id="lineChartContainer">
+                    <canvas id="tempLineChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
